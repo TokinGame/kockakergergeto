@@ -7,7 +7,6 @@ import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 
 /**
  * Created by M on 10/7/2016.
@@ -16,7 +15,7 @@ import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 public class Assets {
 
     public static AssetManager manager;
-    public static final AssetDescriptor<Texture> BADLOGIC_TEXTURE =new AssetDescriptor<Texture>("badlogic.jpg", Texture.class);
+    public static final AssetDescriptor<Texture> TOKIN_TEXTURE =new AssetDescriptor<Texture>("tokin.png", Texture.class);
 
 
 
@@ -26,7 +25,7 @@ public class Assets {
     }
 
     public static void load(){
-        manager.load(BADLOGIC_TEXTURE);
+        manager.load(TOKIN_TEXTURE);
     }
 
     public static void afterLoaded(){

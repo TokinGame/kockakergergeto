@@ -11,21 +11,18 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 public class MenuStage extends MyStage {
     private RectangleActor fupa;
 
-    public MenuStage(Viewport viewport, Game game, RectangleActor fupa) {
+    public MenuStage(Viewport viewport, Game game) {
         super(viewport, game);
-        this.fupa = fupa;
     }
 
-    public MenuStage(Viewport viewport, Batch batch, Game game, RectangleActor fupa) {
+    public MenuStage(Viewport viewport, Batch batch, Game game) {
 
         super(viewport, batch, game);
-        this.fupa = fupa;
     }
 
-    public MenuStage(Game game, RectangleActor fupa) {
+    public MenuStage(Game game) {
 
         super(game);
-        this.fupa = fupa;
     }
 
     public void init(){
