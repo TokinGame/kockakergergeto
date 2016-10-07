@@ -18,7 +18,7 @@ public class MyGdxGame extends Game {
 	@Override
 	public void resume() {
 		super.resume();
-		Assets.mgr.update();
+		Assets.manager.update();
 	}
 
 	@Override

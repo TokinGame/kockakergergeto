@@ -14,15 +14,16 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public class Assets {
 
-    public static AssetManager mgr;
+    public static AssetManager manager;
+    public static final AssetDescriptor<Texture> BADLOGIC_TEXTURE =new AssetDescriptor<Texture>("badlogic.jpg", Texture.class);
 
     public static void prepare() {
-        mgr = new AssetManager();
-        Texture.setAssetManager(mgr);
+        manager = new AssetManager();
+        Texture.setAssetManager(manager);
     }
 
     public static void load(){
-
+        manager.load(BADLOGIC_TEXTURE);
     }
 
     public static void afterLoaded(){
@@ -30,7 +31,7 @@ public class Assets {
     }
 
     public static void unload(){
-        mgr.dispose();
+        manager.dispose();
     }
 
 }
