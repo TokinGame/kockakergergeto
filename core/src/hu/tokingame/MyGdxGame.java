@@ -11,18 +11,20 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 public class MyGdxGame extends Game {
 	@Override
 	public void create () {
-
+		Assets.prepare();
+		//setScreen(new LoadingScreen(this));
 	}
 
 	@Override
 	public void resume() {
 		super.resume();
-
+		Assets.mgr.update();
 	}
 
 	@Override
 	public void dispose () {
 		super.dispose();
+		Assets.unload();
 	}
 
 	@Override
